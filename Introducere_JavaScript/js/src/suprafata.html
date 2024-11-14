@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suprafata</title>
+</head>
+<body>
+<h2> Suprafata patratului</h2>
+
+<p>
+    Formula suprafetei patratului este: A = l*l.
+</p>
+<script>
+    var l;
+    l = parseInt(prompt("Introduceti latura patratului:",0));
+    if(l < 0){
+    alert("Introduceti un numar pozitiv!!!");
+    l = parseInt(prompt("Introduceti latura patratului:",0));
+  }
+    function calculateSquareArea(l){
+    return l*l;
+    }
+    var result = calculateSquareArea(l);
+        console.log(result);
+    alert("Suprafata este:" + result);
+
+</script>
+
+</body>
+</html>
